@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "dev": "nodemon --delay 1"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,17 @@
     "url": "https://github.com/jiho-bae/webpack-env-boilerplate/issues"
   },
   "homepage": "https://github.com/jiho-bae/webpack-env-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.2.2",
+    "nodemon": "^2.0.12",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",

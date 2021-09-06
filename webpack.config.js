@@ -3,7 +3,7 @@ const path = require("path");
 const MODE = "development";
 
 module.exports = {
-  entry: "./src/frontend/js/main.js",
+  entry: "./src/front/js/main.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/main.js",
