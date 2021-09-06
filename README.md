@@ -7,9 +7,9 @@
 
 ### 설정
 
-- [x] front - webpack + babel + scss 설정
-- [x] back - babel + express 설정
-- [x] dev - prettier + eslint 설정
+- [x] front :  webpack + babel + scss 설정
+- [x] back : babel + express 설정
+- [x] dev : prettier + eslint 설정
 
 추가 예정)
 - [ ] ts-boilerplate 브랜치에 typescript 환경설정
