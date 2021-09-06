@@ -1,26 +1,27 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
-const MODE = "development";
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const MODE = 'development';
 
 module.exports = {
-  entry: "./src/front/js/main.js",
+  entry: './src/front/js/main.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "js/main.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/main.js',
     clean: true,
   },
   mode: MODE,
-  plugins: [new MiniCssExtractPlugin({ filename: "css/style.css" })],
+  plugins: [new MiniCssExtractPlugin({ filename: 'css/style.css' })],
   watch: true,
+  devtool: MODE === 'development' ? 'source-map' : '',
   module: {
     rules: [
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            presets: [['@babel/preset-env', { targets: 'defaults' }]],
           },
         },
       },
@@ -30,9 +31,9 @@ module.exports = {
           // Creates `style` nodes from JS strings
           MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
