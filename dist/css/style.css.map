@@ -1,1 +1,0 @@
-{"version":3,"file":"css/style.css","mappings":";;;AACA;EACE,qBCFI;ADEN,C","sources":["webpack://webpack-env-boilerplate/./src/front/scss/style.scss","webpack://webpack-env-boilerplate/./src/front/scss/_variables.scss"],"sourcesContent":["@import \"./variables\";\nbody {\n  background-color: $red;\n}\n","$red: red;\n"],"names":[],"sourceRoot":""}
