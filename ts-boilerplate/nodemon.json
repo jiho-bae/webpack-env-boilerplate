@@ -1,0 +1,4 @@
+{
+  "ignore": ["webpack.config.js", "front/*"],
+  "exec": "babel-node backend/app.js"
+}
